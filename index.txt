@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Ahmed Medhat, Automation, SCADA and DCS engineer based in Dammam, Saudi Arabia.">
+  <title>Ahmed Medhat | Automation, SCADA and DCS Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #fff;
+      --warm: #f4efec;
+      --ink: #4d3533;
+      --body: #383332;
+      --muted: #837c79;
+      --hairline: #e9e3df;
+      --page-width: 966px;
+      --copy-width: 620px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--body);
+      font-family: "DM Sans", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    .site-header {
+      position: sticky;
+      z-index: 5;
+      top: 0;
+      min-height: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 28px;
+      background: rgba(244, 239, 236, .97);
+      color: var(--ink);
+    }
+    .wordmark {
+      color: var(--ink);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 22px;
+      line-height: 1;
+      letter-spacing: -.055em;
+    }
+    .credit {
+      position: absolute;
+      right: max(28px, calc((100vw - 1120px) / 2));
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.4;
+      white-space: nowrap;
+    }
+    .credit a { color: inherit; text-underline-offset: 2px; }
+    .page {
+      width: min(var(--page-width), calc(100% - 64px));
+      margin: 0 auto;
+      padding: 49px 0 90px;
+    }
+    .copy { max-width: var(--copy-width); }
+    h1, h2 {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 400;
+      letter-spacing: -.045em;
+    }
+    h1 { font-size: 36px; line-height: 1.24; }
+    .role { margin: 20px 0 0; color: var(--muted); font-size: 13px; }
+    .intro { margin: 37px 0 0; }
+    section { margin-top: 48px; }
+    section.contact { margin-top: 50px; }
+    h2 { margin-bottom: 20px; font-size: 21px; line-height: 1.35; }
+    p { margin: 0 0 14px; }
+    .contact p { margin-bottom: 24px; }
+    a { color: var(--ink); text-underline-offset: 3px; }
+    .entry { margin: 0 0 23px; }
+    .entry-title { margin: 0 0 4px; color: var(--ink); font-weight: 500; }
+    .entry-detail { margin: 0; }
+    .facts { margin: 0; }
+    .fact { margin: 0 0 15px; }
+    .fact dt { color: var(--ink); font-weight: 500; }
+    .fact dd { margin: 0; }
+    ul { margin: 0; padding-left: 19px; }
+    li { padding-left: 3px; margin: 0 0 7px; }
+    .closing { margin-top: 42px; padding-top: 20px; border-top: 1px solid var(--hairline); color: var(--muted); }
+    @media (max-width: 640px) {
+      .site-header { min-height: 56px; padding: 8px 18px; justify-content: flex-start; }
+      .wordmark { font-size: 20px; }
+      .credit { right: 18px; font-size: 11px; }
+      .page { width: calc(100% - 40px); padding-top: 36px; padding-bottom: 64px; }
+      h1 { font-size: 32px; }
+      .intro { margin-top: 29px; }
+      section, section.contact { margin-top: 39px; }
+    }
+    @media (max-width: 390px) {
+      .credit { max-width: 58%; white-space: normal; text-align: right; }
+    }
+    @media print {
+      .site-header { position: static; }
+      .page { width: 100%; padding: 28px 0; }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wordmark" aria-label="Instinct">Instinct</div>
+    <div class="credit"><a href="mailto:ahmed.medhat.almallah@gmail.com">Made for Ahmed</a> · Nov 24, 2026</div>
+  </header>
+  <main class="page">
+    <article class="copy">
+      <header>
+        <h1>Ahmed Medhat</h1>
+        <p class="role">Automation, SCADA and DCS engineer</p>
+        <p class="intro">Electrical power engineer based in Dammam, Saudi Arabia, with hands-on experience across PLC, SCADA and DCS projects.</p>
+      </header>
+      <section class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>Dammam, Eastern Province, Saudi Arabia</p>
+        <p><a href="tel:+966563480733" style="text-decoration:none">+966 56 348 0733</a></p>
+        <p><a href="mailto:ahmed.medhat.almallah@gmail.com">ahmed.medhat.almallah@gmail.com</a></p>
+      </section>
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>I design, program and commission control systems. My work covers PLC and HMI programming, SCADA dashboards, DCS deployment and upgrades, and connecting plant systems to third-party platforms. I have worked on site and remotely, from food and bakery lines to a steel plant.</p>
+      </section>
+      <section aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+        <div class="entry"><p class="entry-title">1. System Engineer, Giza Arabia (Pulse By Solutions)</p><p class="entry-detail">Oct 2025 to present. Designs and programs SCADA, PLC and HMI solutions on AVEVA System Platform. Builds KPI dashboards, integrates third-party systems over APIs and standard protocols, runs site surveys. AVEVA Application Server certified.</p></div>
+        <div class="entry"><p class="entry-title">2. Service Engineer, ABB</p><p class="entry-detail">Jan 2025 to Oct 2025. Deployed and upgraded ABB 800xA DCS. Wrote control logic in FBD, STL and SCL, designed HMI graphics, took part in FAT and SAT, and led commissioning and troubleshooting. Worked on the EZDK project at EZZ El Dekheila Steel (DCS configuration and HMI design for Direct Reduction).</p></div>
+        <div class="entry"><p class="entry-title">3. Automation Engineer, Nile Company for Food Industries</p><p class="entry-detail">Mar 2023 to Jan 2025. Supervised and troubleshot production lines, programmed Delta PLCs and HMIs, set up communication between devices, designed MCC panels.</p></div>
+        <div class="entry"><p class="entry-title">4. Automation Trainer (part time), Jelecom and Canadian University CIC</p><p class="entry-detail">Taught Siemens PLCs (S7-200, S7-1200, S7-300), VFDs, HMI design and communication protocols.</p></div>
+        <div class="entry"><p class="entry-title">5. Automation Engineer, ATOM for Bakery Automated Production Lines</p><p class="entry-detail">Sep 2021 to Mar 2023. Designed and installed bakery production lines, programmed PLCs and HMIs, and handled motor drive communication and maintenance visits.</p></div>
+      </section>
+      <section aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills and tools</h2>
+        <dl class="facts">
+          <div class="fact"><dt>Control systems</dt><dd>AVEVA System Platform, ABB 800xA, TIA Portal, WinCC, Unity Pro, Delta PLCs</dd></div>
+          <div class="fact"><dt>Design</dt><dd>EPLAN, AutoCAD, DIALux, Visio</dd></div>
+          <div class="fact"><dt>Integration</dt><dd>MQTT, REST API, Node-RED, SQL, C#</dd></div>
+          <div class="fact"><dt>Other tools</dt><dd>MATLAB, Factory IO, Microsoft Office</dd></div>
+          <div class="fact"><dt>Languages</dt><dd>Arabic (native), English (fluent)</dd></div>
+        </dl>
+      </section>
+      <section aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <p>BSc, Electrical Power Engineering, Cairo University, 2021.</p>
+        <p>Graduation project (rated Excellent): control and monitoring of a water desalination system using a parabolic trough collector, built around a Schneider M221 PLC, a servo motor for tracking and an Altivar 312 drive. Sponsored by Cairo University, Schneider Electric and the Academy of Scientific Research and Technology.</p>
+      </section>
+      <section aria-labelledby="courses-heading">
+        <h2 id="courses-heading">Courses and training</h2>
+        <ul>
+          <li>AVEVA System Platform (Udemy, 2024)</li>
+          <li>Schneider Electric automation course, SoMachine basics and Vijeo Designer (2021)</li>
+          <li>Schneider Electric professional training (2020)</li>
+          <li>PLC 1 and PLC 2, Classic Control at EGY CET (2019 to 2020)</li>
+          <li>Orascom, including OSHA safety instruction (2021)</li>
+          <li>Egyptian Company for Metro Management and Operation (2019)</li>
+          <li>IEEE Classic Control and PLC workshops</li>
+        </ul>
+      </section>
+      <footer class="closing">Military service completed.</footer>
+    </article>
+  </main>
+</body>
+</html>
