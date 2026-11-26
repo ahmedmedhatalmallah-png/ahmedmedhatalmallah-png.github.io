@@ -5,132 +5,118 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Ahmed Medhat, Automation, SCADA and DCS engineer based in Dammam, Saudi Arabia.">
 <title>Ahmed Medhat | Automation, SCADA and DCS Engineer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--y:#ffd60a;--k:#111;--p:#f4f1ea;--g:#6b675e;--r:#ff4d2e}
+:root{--navy:#080c2b;--navy2:#0f1547;--navy3:#1a2160;--blue:#2b5cff;--cyan:#00d1ff;--teal:#2de2c0;--ink:#0d1130;--mut:#5b6286;--bg:#f4f6fb;--line:#dfe3f0}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--p);color:var(--k);font:17px/1.65 Archivo,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{margin:0;background:#fff;color:var(--ink);font:17px/1.65 "Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
-.mono{font-family:'IBM Plex Mono',monospace}
-.ticker{background:var(--k);color:var(--y);font:500 13px 'IBM Plex Mono',monospace;overflow:hidden;white-space:nowrap;border-bottom:3px solid var(--k)}
-.ticker div{display:inline-block;padding:9px 0;animation:tk 38s linear infinite}
-.ticker span{margin:0 22px}
-.ticker b{color:#fff;font-weight:500}
-@keyframes tk{to{transform:translateX(-50%)}}
-nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 32px;border-bottom:3px solid var(--k);background:var(--p);position:sticky;top:0;z-index:9}
-.logo{font:400 20px 'Archivo Black';text-decoration:none;letter-spacing:-.02em}
-.logo i{display:inline-block;width:12px;height:12px;background:var(--r);border-radius:50%;margin-left:6px;animation:bl 1.4s steps(2) infinite}
-@keyframes bl{50%{opacity:.15}}
-nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0}
-nav a.l{font:500 13px 'IBM Plex Mono';text-decoration:none;padding:6px 12px;border:2px solid transparent;text-transform:uppercase}
-nav a.l:hover{border-color:var(--k);background:var(--y)}
-.hero{background:var(--y);border-bottom:3px solid var(--k);padding:56px 32px 0;position:relative;overflow:hidden}
-.hero .in{max-width:1180px;margin:auto}
-.tagno{display:inline-block;font:600 13px 'IBM Plex Mono';border:2px solid var(--k);padding:4px 10px;background:var(--p);text-transform:uppercase}
-h1{font:400 clamp(60px,14vw,190px)/.88 'Archivo Black';letter-spacing:-.045em;margin:26px 0 22px;text-transform:uppercase}
-h1 span{display:block;-webkit-text-stroke:3px var(--k);color:transparent}
-.sub{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:end;padding-bottom:36px}
-.sub p{font-size:21px;max-width:560px;margin:0;font-weight:500}
-.btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
-.btn{font:600 14px 'IBM Plex Mono';text-transform:uppercase;text-decoration:none;padding:14px 22px;border:3px solid var(--k);background:var(--k);color:var(--y);box-shadow:5px 5px 0 var(--k);transition:transform .15s,box-shadow .15s}
-.btn.w{background:var(--p);color:var(--k)}
-.btn:hover{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--k)}
-.trend{display:block;width:calc(100% + 64px);margin:0 -32px;height:110px;border-top:3px solid var(--k);background:#ffe45a}
-.trend path{fill:none;stroke:var(--k);stroke-width:3;stroke-dasharray:2400;stroke-dashoffset:2400;animation:dr 4s ease forwards}
-@keyframes dr{to{stroke-dashoffset:0}}
-.wrap{max-width:1180px;margin:auto;padding:0 32px}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:3px solid var(--k)}
-.stat{padding:26px 28px;border-right:3px solid var(--k)}
+.wrap{max-width:1180px;margin:auto;padding:0 28px}
+header.top{position:sticky;top:0;z-index:20;background:rgba(8,12,43,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{color:#fff;text-decoration:none;font-weight:700;font-size:19px;letter-spacing:.02em;display:flex;align-items:center;gap:10px}
+.brand i{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,var(--cyan),var(--blue));display:inline-block}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+nav a{color:#c9d0f5;text-decoration:none;font-size:15px;padding:8px 14px;border-radius:999px;transition:.2s}
+nav a:hover{color:#fff;background:rgba(255,255,255,.1)}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:15px;padding:13px 28px;border-radius:999px;background:linear-gradient(90deg,var(--cyan),var(--blue));color:#fff;border:2px solid transparent;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,209,255,.3)}
+.btn.o{background:transparent;border-color:rgba(255,255,255,.5)}
+.btn.o:hover{background:rgba(255,255,255,.1);box-shadow:none}
+.hero{position:relative;background:radial-gradient(900px 500px at 85% 10%,rgba(43,92,255,.55),transparent 60%),radial-gradient(700px 400px at 10% 90%,rgba(0,209,255,.22),transparent 60%),var(--navy);color:#fff;padding:110px 0 90px;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(180deg,#000,transparent 85%);-webkit-mask-image:linear-gradient(180deg,#000,transparent 85%)}
+.hero .wrap{position:relative}
+.eyebrow{display:inline-block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);font-weight:600;margin-bottom:22px}
+h1{font-size:clamp(40px,6.4vw,84px);line-height:1.04;margin:0 0 24px;font-weight:300;letter-spacing:-.025em;max-width:900px}
+h1 b{font-weight:700;background:linear-gradient(90deg,var(--cyan),var(--teal));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:clamp(18px,2vw,22px);color:#c9d0f5;max-width:640px;margin:0 0 36px;font-weight:300}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.stats{margin-top:-52px;position:relative;z-index:5}
+.stats .grid{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-radius:18px;box-shadow:0 20px 60px rgba(8,12,43,.18);overflow:hidden}
+.stat{padding:30px 28px;border-right:1px solid var(--line)}
 .stat:last-child{border:0}
-.stat b{display:block;font:400 34px/1.1 'Archivo Black';letter-spacing:-.02em}
-.stat span{font:400 13px 'IBM Plex Mono';color:var(--g)}
-section{padding:72px 0;border-bottom:3px solid var(--k)}
-.sec{display:grid;grid-template-columns:230px 1fr;gap:40px}
-.sec>h2{font:400 15px 'IBM Plex Mono';text-transform:uppercase;margin:6px 0 0;position:sticky;top:90px;align-self:start}
-.sec>h2 em{display:block;font:400 64px/1 'Archivo Black';font-style:normal;color:var(--y);-webkit-text-stroke:2px var(--k);margin-bottom:6px}
-.big{font:500 clamp(22px,3vw,32px)/1.35 Archivo;letter-spacing:-.01em;margin:0;max-width:820px}
-.job{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:24px 0;border-top:3px solid var(--k);transition:background .2s,padding .2s}
-.job:last-child{border-bottom:3px solid var(--k)}
-.job:hover{background:var(--y);padding-left:14px;padding-right:14px}
-.job .d{font:500 13px 'IBM Plex Mono';color:var(--g);text-transform:uppercase;padding-top:6px}
-.job:hover .d{color:var(--k)}
-.job h3{font:400 24px/1.2 'Archivo Black';margin:0 0 8px;letter-spacing:-.02em}
-.job p{margin:0;font-size:16px}
-.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:3px solid var(--k)}
-.sk{padding:22px 24px;border-right:3px solid var(--k);border-bottom:3px solid var(--k);margin:0 -3px -3px 0}
-.sk h3{font:600 13px 'IBM Plex Mono';text-transform:uppercase;margin:0 0 12px;color:var(--r)}
-.sk span{display:inline-block;font:500 14px 'IBM Plex Mono';border:2px solid var(--k);padding:3px 10px;margin:0 6px 8px 0;background:var(--p);transition:background .15s}
-.sk span:hover{background:var(--y)}
-.edu{background:var(--k);color:var(--p);padding:30px 32px;margin-bottom:36px}
-.edu h3{font:400 26px/1.2 'Archivo Black';margin:0 0 12px;color:var(--y);letter-spacing:-.02em}
-.edu p{margin:0}
+.stat b{display:block;font-size:32px;font-weight:700;line-height:1.1;background:linear-gradient(90deg,var(--blue),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{display:block;margin-top:8px;font-size:14px;color:var(--mut);line-height:1.45}
+section{padding:96px 0}
+section.alt{background:var(--bg)}
+section.dark{background:var(--navy);color:#fff}
+.kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:700;margin:0 0 14px}
+.dark .kicker{color:var(--cyan)}
+h2{font-size:clamp(30px,4vw,48px);line-height:1.12;margin:0 0 28px;font-weight:300;letter-spacing:-.02em}
+h2 b{font-weight:700}
+.big{font-size:clamp(19px,2.2vw,24px);line-height:1.55;color:#2c3358;max-width:860px;margin:0;font-weight:300}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px;position:relative;transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(8,12,43,.12);border-color:var(--cyan)}
+.card .d{font-size:13px;font-weight:600;color:var(--blue);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}
+.card h3{font-size:21px;line-height:1.3;margin:0 0 10px;font-weight:600}
+.card p{margin:0;font-size:16px;color:#3b4268}
+.card.wide{grid-column:1/-1;background:linear-gradient(135deg,var(--navy2),var(--navy3));color:#fff;border:0}
+.card.wide .d{color:var(--cyan)}
+.card.wide p{color:#c9d0f5}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.sk{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:28px}
+.sk h3{font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);margin:0 0 16px;font-weight:600}
+.sk span{display:inline-block;font-size:14px;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);margin:0 6px 8px 0;transition:.2s}
+.sk span:hover{background:var(--blue);border-color:var(--blue)}
+.edu{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:start}
+.edu .main{background:linear-gradient(135deg,var(--navy2),var(--navy3));color:#fff;border-radius:18px;padding:36px}
+.edu .main h3{font-size:24px;line-height:1.3;margin:0 0 14px;font-weight:600}
+.edu .main p{margin:0;color:#c9d0f5;font-size:16px}
+.edu h4{margin:0 0 14px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
 ul.c{list-style:none;margin:0;padding:0}
-ul.c li{padding:10px 0 10px 40px;border-top:2px solid var(--k);position:relative}
-ul.c li:last-child{border-bottom:2px solid var(--k)}
-ul.c li::before{content:"+";position:absolute;left:6px;font:600 18px 'IBM Plex Mono';color:var(--r)}
-.sub2{font:600 13px 'IBM Plex Mono';text-transform:uppercase;margin:0 0 12px}
-.contact{background:var(--y)}
-.contact a.m{display:block;font:400 clamp(26px,5.2vw,64px)/1.08 'Archivo Black';letter-spacing:-.035em;text-decoration:none;word-break:break-word;margin:0 0 14px}
-.contact a.m:hover{text-decoration:underline;text-decoration-thickness:5px}
-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:22px 32px;font:500 13px 'IBM Plex Mono';background:var(--k);color:var(--p)}
-.r{opacity:0;transform:translateY(26px);transition:opacity .6s,transform .6s}
+ul.c li{padding:13px 0 13px 30px;border-bottom:1px solid var(--line);position:relative;font-size:16px}
+ul.c li:before{content:"";position:absolute;left:0;top:21px;width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--cyan),var(--blue))}
+.contact{background:radial-gradient(700px 400px at 90% 0,rgba(43,92,255,.5),transparent 60%),var(--navy);color:#fff}
+.contact a.m{display:block;font-size:clamp(24px,4.4vw,52px);font-weight:300;letter-spacing:-.02em;text-decoration:none;word-break:break-word;margin:0 0 10px;transition:color .2s}
+.contact a.m:hover{color:var(--cyan)}
+.contact p{color:#c9d0f5;margin:22px 0 0}
+footer{background:#050823;color:#8f98cc;font-size:14px;padding:26px 0}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.r{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}
 .r.v{opacity:1;transform:none}
-@media(max-width:860px){.sub{grid-template-columns:1fr}.btns{justify-content:flex-start}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:3px solid var(--k)}.sec{grid-template-columns:1fr;gap:18px}.sec>h2{position:static}.sec>h2 em{font-size:44px}.job{grid-template-columns:1fr;gap:4px}.skills{grid-template-columns:1fr}nav ul{display:none}nav{padding:14px 20px}.hero,.wrap{padding-left:20px;padding-right:20px}.trend{width:calc(100% + 40px);margin:0 -20px}}
-@media(prefers-reduced-motion:reduce){.ticker div,.logo i{animation:none}.r{opacity:1;transform:none;transition:none}.trend path{animation:none;stroke-dashoffset:0}}
-@media print{.ticker,nav{display:none}}
+@media(max-width:900px){nav ul{display:none}.stats .grid{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.cards,.skills,.edu{grid-template-columns:1fr}section{padding:68px 0}.hero{padding:76px 0 80px}}
+@media(max-width:520px){.wrap{padding:0 20px}.stat{padding:22px 18px}.stat b{font-size:24px}.card{padding:24px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.r{opacity:1;transform:none}}
 </style>
 </head>
 <body>
-<div class="ticker" aria-hidden="true"><div>
-<span>PLC <b>●</b> SCADA <b>●</b> DCS <b>●</b> HMI</span><span>AVEVA SYSTEM PLATFORM</span><span>ABB 800xA</span><span>TIA PORTAL</span><span>MQTT / REST / NODE-RED</span><span>COMMISSIONING <b>●</b> FAT <b>●</b> SAT</span><span>DAMMAM, KSA</span>
-<span>PLC <b>●</b> SCADA <b>●</b> DCS <b>●</b> HMI</span><span>AVEVA SYSTEM PLATFORM</span><span>ABB 800xA</span><span>TIA PORTAL</span><span>MQTT / REST / NODE-RED</span><span>COMMISSIONING <b>●</b> FAT <b>●</b> SAT</span><span>DAMMAM, KSA</span>
+<header class="top"><div class="wrap"><a class="brand" href="#top"><i></i>Ahmed Medhat</a>
+<nav aria-label="Main"><ul><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li></ul></nav></div></header>
+<div class="hero" id="top"><div class="wrap">
+<span class="eyebrow">Dammam, Saudi Arabia</span>
+<h1>Automation, <b>SCADA</b> and <b>DCS</b> engineer</h1>
+<p class="lead">Electrical power engineer with hands-on experience across PLC, SCADA and DCS projects.</p>
+<div class="btns"><a class="btn" href="mailto:ahmed.medhat.almallah@gmail.com">Get in touch</a><a class="btn o" href="#experience">View experience</a></div>
 </div></div>
-<nav><a class="logo" href="#top">AHMED MEDHAT<i></i></a>
-<ul><li><a class="l" href="#about">About</a></li><li><a class="l" href="#experience">Experience</a></li><li><a class="l" href="#skills">Skills</a></li><li><a class="l" href="#education">Education</a></li><li><a class="l" href="#contact">Contact</a></li></ul></nav>
-<header class="hero" id="top"><div class="in">
-<span class="tagno">Dammam, Saudi Arabia</span>
-<h1>Ahmed<span>Medhat</span></h1>
-<div class="sub"><p>Automation, SCADA and DCS engineer. Electrical power engineer with hands-on experience across PLC, SCADA and DCS projects.</p>
-<div class="btns"><a class="btn" href="mailto:ahmed.medhat.almallah@gmail.com">Get in touch</a><a class="btn w" href="#experience">Experience</a></div></div>
-<svg class="trend" viewBox="0 0 1200 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80 L90 80 L110 30 L190 30 L210 70 L330 70 L350 20 L470 20 L490 85 L610 85 L630 45 L760 45 L780 90 L900 90 L920 25 L1050 25 L1070 60 L1200 60"/></svg>
-</div></header>
-<div class="stats">
-<div class="stat"><b>Oct 2025</b><span>System Engineer, Giza Arabia (Pulse By Solutions)</span></div>
-<div class="stat"><b>AVEVA</b><span>Application Server certified</span></div>
-<div class="stat"><b>800xA</b><span>ABB DCS deployment and upgrades</span></div>
-<div class="stat"><b>2021</b><span>BSc, Cairo University</span></div>
-</div>
-<main class="wrap">
-<section id="about" class="sec r"><h2><em>01</em>About</h2>
-<p class="big">I design, program and commission control systems. My work covers PLC and HMI programming, SCADA dashboards, DCS deployment and upgrades, and connecting plant systems to third-party platforms. I have worked on site and remotely, from food and bakery lines to a steel plant.</p></section>
-
-<section id="experience" class="sec r"><h2><em>02</em>Experience</h2>
-<div>
-<div class="job"><div class="d">Oct 2025 to present</div><div><h3>System Engineer, Giza Arabia (Pulse By Solutions)</h3><p>Designs and programs SCADA, PLC and HMI solutions on AVEVA System Platform. Builds KPI dashboards, integrates third-party systems over APIs and standard protocols, runs site surveys. AVEVA Application Server certified.</p></div></div>
-<div class="job"><div class="d">Jan 2025 to Oct 2025</div><div><h3>Service Engineer, ABB</h3><p>Deployed and upgraded ABB 800xA DCS. Wrote control logic in FBD, STL and SCL, designed HMI graphics, took part in FAT and SAT, and led commissioning and troubleshooting. Worked on the EZDK project at EZZ El Dekheila Steel (DCS configuration and HMI design for Direct Reduction).</p></div></div>
-<div class="job"><div class="d">Mar 2023 to Jan 2025</div><div><h3>Automation Engineer, Nile Company for Food Industries</h3><p>Supervised and troubleshot production lines, programmed Delta PLCs and HMIs, set up communication between devices, designed MCC panels.</p></div></div>
-<div class="job"><div class="d">Part time</div><div><h3>Automation Trainer, Jelecom and Canadian University CIC</h3><p>Taught Siemens PLCs (S7-200, S7-1200, S7-300), VFDs, HMI design and communication protocols.</p></div></div>
-<div class="job"><div class="d">Sep 2021 to Mar 2023</div><div><h3>Automation Engineer, ATOM for Bakery Automated Production Lines</h3><p>Designed and installed bakery production lines, programmed PLCs and HMIs, and handled motor drive communication and maintenance visits.</p></div></div>
-</div></section>
-
-<section id="skills" class="sec r"><h2><em>03</em>Skills and tools</h2>
+<div class="stats wrap"><div class="grid">
+<div class="stat r"><b>Oct 2025</b><span>System Engineer, Giza Arabia (Pulse By Solutions)</span></div>
+<div class="stat r"><b>AVEVA</b><span>Application Server certified</span></div>
+<div class="stat r"><b>800xA</b><span>ABB DCS deployment and upgrades</span></div>
+<div class="stat r"><b>2021</b><span>BSc, Cairo University</span></div>
+</div></div>
+<section id="about"><div class="wrap r"><p class="kicker">About</p><h2>Control systems, <b>designed and commissioned</b></h2>
+<p class="big">I design, program and commission control systems. My work covers PLC and HMI programming, SCADA dashboards, DCS deployment and upgrades, and connecting plant systems to third-party platforms. I have worked on site and remotely, from food and bakery lines to a steel plant.</p></div></section>
+<section id="experience" class="alt"><div class="wrap"><div class="r"><p class="kicker">Experience</p><h2>Where I have <b>worked</b></h2></div>
+<div class="cards">
+<div class="card wide r"><div class="d">Oct 2025 to present</div><h3>System Engineer, Giza Arabia (Pulse By Solutions)</h3><p>Designs and programs SCADA, PLC and HMI solutions on AVEVA System Platform. Builds KPI dashboards, integrates third-party systems over APIs and standard protocols, runs site surveys. AVEVA Application Server certified.</p></div>
+<div class="card r"><div class="d">Jan 2025 to Oct 2025</div><h3>Service Engineer, ABB</h3><p>Deployed and upgraded ABB 800xA DCS. Wrote control logic in FBD, STL and SCL, designed HMI graphics, took part in FAT and SAT, and led commissioning and troubleshooting. Worked on the EZDK project at EZZ El Dekheila Steel (DCS configuration and HMI design for Direct Reduction).</p></div>
+<div class="card r"><div class="d">Mar 2023 to Jan 2025</div><h3>Automation Engineer, Nile Company for Food Industries</h3><p>Supervised and troubleshot production lines, programmed Delta PLCs and HMIs, set up communication between devices, designed MCC panels.</p></div>
+<div class="card r"><div class="d">Part time</div><h3>Automation Trainer, Jelecom and Canadian University CIC</h3><p>Taught Siemens PLCs (S7-200, S7-1200, S7-300), VFDs, HMI design and communication protocols.</p></div>
+<div class="card r"><div class="d">Sep 2021 to Mar 2023</div><h3>Automation Engineer, ATOM for Bakery Automated Production Lines</h3><p>Designed and installed bakery production lines, programmed PLCs and HMIs, and handled motor drive communication and maintenance visits.</p></div>
+</div></div></section>
+<section id="skills" class="dark"><div class="wrap"><div class="r"><p class="kicker">Skills and tools</p><h2>What I <b>work with</b></h2></div>
 <div class="skills">
-<div class="sk"><h3>Control systems</h3><span>AVEVA System Platform</span><span>ABB 800xA</span><span>TIA Portal</span><span>WinCC</span><span>Unity Pro</span><span>Delta PLCs</span></div>
-<div class="sk"><h3>Design</h3><span>EPLAN</span><span>AutoCAD</span><span>DIALux</span><span>Visio</span></div>
-<div class="sk"><h3>Integration</h3><span>MQTT</span><span>REST API</span><span>Node-RED</span><span>SQL</span><span>C#</span></div>
-<div class="sk"><h3>Other tools</h3><span>MATLAB</span><span>Factory IO</span><span>Microsoft Office</span></div>
-<div class="sk"><h3>Languages</h3><span>Arabic (native)</span><span>English (fluent)</span></div>
-</div></section>
-
-<section id="education" class="sec r"><h2><em>04</em>Education</h2>
-<div>
-<div class="edu"><h3>BSc, Electrical Power Engineering, Cairo University, 2021</h3>
+<div class="sk r"><h3>Control systems</h3><span>AVEVA System Platform</span><span>ABB 800xA</span><span>TIA Portal</span><span>WinCC</span><span>Unity Pro</span><span>Delta PLCs</span></div>
+<div class="sk r"><h3>Design</h3><span>EPLAN</span><span>AutoCAD</span><span>DIALux</span><span>Visio</span></div>
+<div class="sk r"><h3>Integration</h3><span>MQTT</span><span>REST API</span><span>Node-RED</span><span>SQL</span><span>C#</span></div>
+<div class="sk r"><h3>Other tools</h3><span>MATLAB</span><span>Factory IO</span><span>Microsoft Office</span></div>
+<div class="sk r"><h3>Languages</h3><span>Arabic (native)</span><span>English (fluent)</span></div>
+</div></div></section>
+<section id="education"><div class="wrap"><div class="r"><p class="kicker">Education</p><h2>Education and <b>training</b></h2></div>
+<div class="edu r"><div class="main"><h3>BSc, Electrical Power Engineering, Cairo University, 2021</h3>
 <p>Graduation project (rated Excellent): control and monitoring of a water desalination system using a parabolic trough collector, built around a Schneider M221 PLC, a servo motor for tracking and an Altivar 312 drive. Sponsored by Cairo University, Schneider Electric and the Academy of Scientific Research and Technology.</p></div>
-<p class="sub2">Courses and training</p>
-<ul class="c">
+<div><h4>Courses and training</h4><ul class="c">
 <li>AVEVA System Platform (Udemy, 2024)</li>
 <li>Schneider Electric automation course, SoMachine basics and Vijeo Designer (2021)</li>
 <li>Schneider Electric professional training (2020)</li>
@@ -138,14 +124,13 @@ footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;padding
 <li>Orascom, including OSHA safety instruction (2021)</li>
 <li>Egyptian Company for Metro Management and Operation (2019)</li>
 <li>IEEE Classic Control and PLC workshops</li>
-</ul></div></section>
-</main>
-<section id="contact" class="contact" style="border-bottom:0"><div class="wrap sec r"><h2><em>05</em>Contact</h2>
-<div><a class="m" href="mailto:ahmed.medhat.almallah@gmail.com">ahmed.medhat.almallah@gmail.com</a><a class="m" href="tel:+966563480733">+966 56 348 0733</a><p class="mono" style="margin:18px 0 0">Dammam, Eastern Province, Saudi Arabia</p></div></div></section>
-<footer><span>&copy; 2026 AHMED MEDHAT</span><span>MILITARY SERVICE COMPLETED</span></footer>
+</ul></div></div></div></section>
+<section id="contact" class="contact"><div class="wrap r"><p class="kicker">Contact</p><h2>Let's <b>talk</b></h2>
+<a class="m" href="mailto:ahmed.medhat.almallah@gmail.com">ahmed.medhat.almallah@gmail.com</a><a class="m" href="tel:+966563480733">+966 56 348 0733</a><p>Dammam, Eastern Province, Saudi Arabia</p></div></section>
+<footer><div class="wrap"><span>&copy; 2026 Ahmed Medhat</span><span>Military service completed</span></div></footer>
 <script>
-const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');io.unobserve(x.target)}}),{threshold:.08});
-document.querySelectorAll('.r').forEach(el=>io.observe(el));
+var els=document.querySelectorAll('.r');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('v');io.unobserve(x.target)}})},{threshold:.08});els.forEach(function(el){io.observe(el)})}else{els.forEach(function(el){el.classList.add('v')})}
 </script>
 </body>
 </html>
