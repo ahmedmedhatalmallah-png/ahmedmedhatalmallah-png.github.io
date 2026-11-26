@@ -170,6 +170,7 @@ nav a{padding:13px 14px;font-size:16px}
 <li><a href="#about"><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg>About</a></li>
 <li><a href="#experience"><svg class="ic" aria-hidden="true"><use href="#i-brief"/></svg>Experience</a></li>
 <li><a href="#dashboards"><svg class="ic" aria-hidden="true"><use href="#i-dash"/></svg>Dashboards</a></li>
+<li><a href="gallery.html"><svg class="ic" aria-hidden="true"><use href="#i-factory"/></svg>Gallery</a></li>
 <li><a href="#skills"><svg class="ic" aria-hidden="true"><use href="#i-chip"/></svg>Skills</a></li>
 <li><a href="#education"><svg class="ic" aria-hidden="true"><use href="#i-cap"/></svg>Education</a></li>
 <li><a href="#certifications"><svg class="ic" aria-hidden="true"><use href="#i-cap"/></svg>Certifications</a></li>
@@ -267,9 +268,9 @@ function ico(n){bg.innerHTML='<svg class="ic" aria-hidden="true"><use href="#i-'
 bg.addEventListener('click',function(){var o=nv.classList.toggle('open');bg.setAttribute('aria-expanded',o);ico(o?'close':'menu')});
 var links=[].slice.call(nv.querySelectorAll('a'));
 links.forEach(function(a){a.addEventListener('click',function(){nv.classList.remove('open');bg.setAttribute('aria-expanded',false);ico('menu')})});
-var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+var pairs=links.map(function(a){return{a:a,s:document.querySelector(a.getAttribute('href'))}}).filter(function(p){return p.s});
 var pg=document.getElementById('pg');
-function onS(){var y=window.scrollY+120,cur=-1;secs.forEach(function(s,i){if(s.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('act',i===cur)});var h=document.documentElement.scrollHeight-innerHeight;pg.style.width=(h>0?window.scrollY/h*100:0)+'%'}
+function onS(){var y=window.scrollY+120,cur=-1;pairs.forEach(function(p,i){if(p.s.offsetTop<=y)cur=i});pairs.forEach(function(p,i){p.a.classList.toggle('act',i===cur)});var h=document.documentElement.scrollHeight-innerHeight;pg.style.width=(h>0?window.scrollY/h*100:0)+'%'}
 addEventListener('scroll',onS,{passive:true});onS();
 var $=function(i){return document.getElementById(i)};
 var bars=$('bars'),B=[];for(var i=0;i<7;i++){var b=document.createElement('i');bars.appendChild(b);B.push(b)}
